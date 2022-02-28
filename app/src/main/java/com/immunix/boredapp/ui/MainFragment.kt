@@ -43,6 +43,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
                 }
                 is ViewState.Failure -> {
                     activityName.text = state.msg
+                    activityType.text = ""
                     progressBar.visibility = View.GONE
                     Log.d("OBSERVE", state.msg)
                 }
